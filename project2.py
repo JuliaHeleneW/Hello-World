@@ -24,3 +24,9 @@ while(True)
     cv2.waitKey(0)
 cv2.destroyAllWindows()
 #http://docs.opencv.org/3.0-beta/modules/videoio/doc/reading_and_writing_video.html
+#https://docs.python.org/3.0/library/time.html
+from PIL import ImageGrab
+import time
+time.sleep(5)
+ImageGrab.grab().save("screen_capture.jpg", "JPEG")
+
