@@ -30,4 +30,9 @@ from PIL import ImageGrab
 import time
 time.sleep(5)
 ImageGrab.grab().save("screen_capture.jpg", "JPEG")
+#time loop: until the time is passed, do stuff
+import time
+
+t_end = time.time() + 60 * 15
+while time.time() < t_end:
 
