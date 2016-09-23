@@ -4,16 +4,22 @@ import pyscreenshot as ImageGrab
 import numpy as np
 import cv2
 #fullscreen
-im=imageGrab.grab()
+#im=imageGrab.grab()
 im.show()
 #part of the screen
 xone=raw_input("Enter X1:")
 xtwo=raw_input("Enter X2:")
 yone=raw_input("Enter Y1:")
 ytwo=raw_input("Enter Y2:")
-im=imageGrab.grab(bbox=(%xone,%yone,%xtwo,%ytwo))
+while(True)
+    im=imageGrab.grab(bbox=(%xone,%yone,%xtwo,%ytwo))
 #to file
-ImageGrab.grab_to_file('im.png')
+#ImageGrab.grab_to_file('im.png')
 #capture frames from the screen
-cv2.VideoWriter.open(filename, fourcc, fps, frameSize[, isColor])
+#cv2.VideoWriter.open(filename, fourcc, fps, frameSize[, isColor])
 #fourcc: http://www.fourcc.org/codecs.php
+    img_np = np.array(img)
+    frame = cv2.cvtColor(img_np, cv2.COLOR_BGR2GRAY)
+    cv2.imshow("test", frame)
+    cv2.waitKey(0)
+cv2.destroyAllWindows()
