@@ -23,3 +23,4 @@ while(True)
     cv2.imshow("test", frame)
     cv2.waitKey(0)
 cv2.destroyAllWindows()
+#http://docs.opencv.org/3.0-beta/modules/videoio/doc/reading_and_writing_video.html
