@@ -25,6 +25,7 @@ while(True)
 cv2.destroyAllWindows()
 #http://docs.opencv.org/3.0-beta/modules/videoio/doc/reading_and_writing_video.html
 #https://docs.python.org/3.0/library/time.html
+#http://stackoverflow.com/questions/24374620/python-loop-to-run-for-certain-amount-of-seconds
 from PIL import ImageGrab
 import time
 time.sleep(5)
